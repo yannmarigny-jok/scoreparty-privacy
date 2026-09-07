@@ -20,105 +20,374 @@
     @media (prefers-color-scheme: dark) {
       body { color: #e6e6e6; background: #121212; }
       a { color: #8ab4f8; }
-      hr { border-color: #333; }
     }
     h1 { font-size: 1.6rem; margin-bottom: 4px; }
     h2 { font-size: 1.15rem; margin-top: 1.8em; }
     .meta { color: #888; font-size: 0.9rem; margin-bottom: 1.5em; }
-    .lang-switch { margin-bottom: 24px; font-size: 0.95rem; }
-    .lang-switch a { margin-right: 12px; }
-    ul { padding-left: 1.2em; }
-    hr { margin: 48px 0; border: none; border-top: 1px solid #ddd; }
+    .lang-switch { margin-bottom: 24px; font-size: 0.95rem; line-height: 2; }
+    .lang-switch a { margin-inline-end: 12px; }
+    ul { padding-inline-start: 1.2em; }
     a { color: #1a73e8; }
     section { display: none; }
     section:target { display: block; }
-    /* Default: show FR when no hash */
+    /* Sans ancre dans l'URL, on montre fr. */
     body:not(:has(section:target)) #fr { display: block; }
   </style>
 </head>
 <body>
-  <div class="lang-switch">
-    <a href="#fr">Français</a> <a href="#en">English</a>
-  </div>
+  <nav class="lang-switch">
+    <a href="#fr" lang="fr">Français</a>
+    <a href="#en" lang="en">English</a>
+    <a href="#de" lang="de">Deutsch</a>
+    <a href="#es" lang="es">Español</a>
+    <a href="#it" lang="it">Italiano</a>
+    <a href="#pt" lang="pt">Português</a>
+    <a href="#tr" lang="tr">Türkçe</a>
+    <a href="#ar" lang="ar">العربية</a>
+  </nav>
 
-  <section id="fr">
+  <section id="fr" lang="fr">
     <h1>Politique de confidentialité — ScoreParty</h1>
-    <p class="meta">Dernière mise à jour : 17 juin 2026</p>
-    <p>ScoreParty est une application de comptage de points pour jeux de cartes et de société. Votre vie privée est importante pour nous.</p>
-
-    <h2>1. Données collectées</h2>
-    <p>ScoreParty ne collecte aucune donnée personnelle identifiante. Le cœur de l'application fonctionne hors ligne.</p>
-    <p>Les seules données que vous saisissez sont stockées localement sur votre appareil uniquement :</p>
+    <p class="meta">Dernière mise à jour : 7 septembre 2026</p>
+    <p>ScoreParty est une application de comptage de points pour jeux de cartes et de société. Elle fonctionne sans compte et sans serveur qui nous appartienne. Cette page décrit précisément les seules données qui quittent votre appareil, et pourquoi.</p>
+    <h2>1. Ce que vous saisissez reste sur l'appareil</h2>
+    <p>Les données que vous créez en jouant sont enregistrées dans le stockage privé de l'application, sur votre appareil :</p>
     <ul>
-      <li>Les noms des joueurs que vous saisissez</li>
-      <li>Les scores des parties</li>
-      <li>Vos préférences (thème, langue, jeux visibles)</li>
+      <li>les noms des joueurs et les profils que vous créez ;</li>
+      <li>les scores, les parties et les soirées, avec leur historique et leurs statistiques ;</li>
+      <li>vos préférences (thème, langue, jeux visibles, objectifs de score).</li>
     </ul>
-    <p>Ces données ne sont jamais envoyées à un serveur ni partagées avec des tiers.</p>
-
-    <h2>2. Pas de compte utilisateur</h2>
-    <p>ScoreParty ne nécessite aucun compte, aucune inscription, aucune connexion. Aucune adresse e-mail, numéro de téléphone ou identifiant n'est demandé.</p>
-
-    <h2>3. Publicité</h2>
-    <p>La version gratuite de ScoreParty affiche des bannières publicitaires fournies par Google AdMob. À cette fin, Google et ses partenaires peuvent collecter et traiter certaines données (notamment l'identifiant publicitaire de l'appareil et des données d'usage) afin d'afficher des annonces et d'en mesurer la performance.</p>
-    <p>Dans l'Espace économique européen, au Royaume-Uni et en Suisse, un formulaire de consentement (Google User Messaging Platform) vous est présenté avant tout affichage de publicité. Sans votre consentement, seules des publicités non personnalisées peuvent être diffusées. Vous pouvez modifier votre choix à tout moment dans Réglages → « Gérer le consentement publicitaire ».</p>
-    <p>Pour en savoir plus sur l'utilisation des données par Google dans la publicité : <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
-    <p>La version Premium (achat unique) supprime toutes les publicités.</p>
-
-    <h2>4. Connexion réseau</h2>
-    <p>Le comptage des points fonctionne entièrement hors ligne. Seul l'affichage des publicités (version gratuite) nécessite une connexion Internet.</p>
-
-    <h2>5. Données des enfants</h2>
-    <p>ScoreParty n'est pas destinée aux enfants de moins de 13 ans et ne leur demande aucune donnée. Les publicités diffusées sont configurées pour respecter les réglementations applicables (COPPA, RGPD).</p>
-
-    <h2>6. Suppression des données</h2>
-    <p>Toutes les données de jeu sont stockées localement. Désinstaller l'application supprime définitivement toutes les données. Vous pouvez aussi supprimer vos parties depuis l'historique de l'application.</p>
-
-    <h2>7. Modifications</h2>
-    <p>Cette politique peut être mise à jour. Toute modification sera reflétée dans l'application et sur cette page.</p>
-
-    <h2>8. Contact</h2>
-    <p>Pour toute question, contactez-nous à : <a href="mailto:jokoukos.studio@gmail.com">jokoukos.studio@gmail.com</a></p>
+    <p>Nous ne les envoyons à aucun serveur — nous n'en avons aucun — et ne les partageons avec aucun tiers. Deux réserves, décrites plus bas : la sauvegarde d'Android (section 4) les copie dans votre propre espace Google si vous l'avez activée, et une image de récapitulatif que vous choisissez de partager part vers l'application que vous désignez (section 5).</p>
+    <h2>2. Aucun compte</h2>
+    <p>Aucune inscription, aucune connexion, aucun code d'accès. Nous ne demandons ni adresse e-mail, ni numéro de téléphone, ni identifiant. Aucune donnée en notre possession ne permet de vous identifier.</p>
+    <h2>3. Publicité (version gratuite)</h2>
+    <p>La version gratuite affiche une bannière fournie par Google AdMob. Le SDK publicitaire de Google collecte alors, depuis votre appareil, et transmet à Google :</p>
+    <ul>
+      <li>l'<strong>identifiant publicitaire</strong> de l'appareil et les identifiants d'application associés ;</li>
+      <li>votre <strong>position approximative</strong>, déduite de votre adresse IP — jamais le GPS, auquel l'application n'accède pas ;</li>
+      <li>vos <strong>interactions avec l'application</strong> : affichages et appuis sur les annonces, lancements ;</li>
+      <li>des <strong>journaux de diagnostic</strong> : temps de lancement, blocages, consommation d'énergie.</li>
+    </ul>
+    <p>Ces données servent à sélectionner et à mesurer les annonces, à produire des statistiques d'audience et à prévenir la fraude. Elles sont <strong>transmises à Google</strong>, qui agit comme régie publicitaire, et <strong>chiffrées pendant leur transfert</strong> (TLS). Le détail des pratiques de Google est ici : <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
+    <p>Dans l'Espace économique européen, au Royaume-Uni et en Suisse, un formulaire de consentement (Google User Messaging Platform) vous est présenté avant tout chargement de publicité. Sans votre consentement, aucune annonce personnalisée n'est diffusée. Vous pouvez revenir sur votre choix à tout moment dans Réglages → « Gérer le consentement publicitaire ».</p>
+    <p><strong>La version Premium supprime la bannière, et avec elle cette collecte</strong> : sans bannière à afficher, le SDK publicitaire ne charge rien.</p>
+    <h2>4. Sauvegarde d'Android et changement de téléphone</h2>
+    <p>Pour qu'un changement de téléphone n'efface pas votre historique, l'application autorise la sauvegarde système d'Android. Si vous l'avez activée sur votre appareil, Android copie les données de l'application — parties, profils, préférences — dans <strong>votre</strong> espace de sauvegarde Google, puis les restaure sur votre nouvel appareil. Cette sauvegarde est assurée par Android et par votre compte Google, pas par nous : nous n'y avons aucun accès. Vous pouvez la désactiver dans les réglages de votre appareil.</p>
+    <h2>5. Partage à votre initiative</h2>
+    <p>Le récapitulatif d'une soirée peut être partagé sous forme d'image. Elle est produite sur l'appareil, puis remise à l'application que vous choisissez dans le menu de partage du système. ScoreParty ne l'envoie nulle part d'elle-même et n'en conserve aucune copie ailleurs que sur votre appareil.</p>
+    <h2>6. Achats</h2>
+    <p>L'achat de la version Premium est traité par Google Play, ou par l'App Store sur iPhone. Nous ne voyons ni ne conservons aucune donnée de paiement : l'application reçoit seulement la confirmation de l'achat et n'enregistre localement qu'un indicateur « premium activé ».</p>
+    <h2>7. Connexion réseau</h2>
+    <p>Le comptage des points fonctionne entièrement hors ligne. Une connexion Internet ne sert qu'à afficher les publicités, en version gratuite, et à traiter un achat.</p>
+    <h2>8. Enfants</h2>
+    <p>ScoreParty n'est pas destinée aux enfants de moins de 13 ans et ne leur demande aucune donnée. La publicité qui y est diffusée est configurée conformément aux réglementations applicables, notamment le RGPD et le COPPA.</p>
+    <h2>9. Suppression des données et vos droits</h2>
+    <p>Toutes les données de jeu sont locales : désinstaller l'application les supprime définitivement, et vous pouvez aussi effacer une partie ou tout un historique depuis l'application. Comme nous ne détenons aucune donnée vous concernant, il n'y a aucune demande d'accès ou de suppression à nous adresser. Pour les données collectées par la publicité, la main revient à Google : réglages de votre compte Google, et formulaire de consentement accessible depuis les Réglages de l'application.</p>
+    <h2>10. Modifications</h2>
+    <p>Cette politique peut être mise à jour. Toute modification est publiée à la fois dans l'application et sur cette page, avec sa date.</p>
+    <h2>11. Contact</h2>
+    <p>Pour toute question : <a href="mailto:jokoukos.studio@gmail.com">jokoukos.studio@gmail.com</a></p>
   </section>
 
-  <section id="en">
+  <section id="en" lang="en">
     <h1>Privacy Policy — ScoreParty</h1>
-    <p class="meta">Last updated: June 17, 2026</p>
-    <p>ScoreParty is a score-keeping app for card and board games. Your privacy matters to us.</p>
-
-    <h2>1. Data Collected</h2>
-    <p>ScoreParty does not collect any personally identifying data. The core of the app works offline.</p>
-    <p>The only data you enter is stored locally on your device only:</p>
+    <p class="meta">Last updated: 7 September 2026</p>
+    <p>ScoreParty is a score-keeping app for card and board games. It works without an account and without any server of ours. This page describes exactly which data leaves your device, and why.</p>
+    <h2>1. What you enter stays on your device</h2>
+    <p>The data you create while playing is saved in the app's private storage, on your device:</p>
     <ul>
-      <li>Player names you enter</li>
-      <li>Game scores</li>
-      <li>Your preferences (theme, language, visible games)</li>
+      <li>the player names and profiles you create;</li>
+      <li>scores, games and game nights, with their history and statistics;</li>
+      <li>your preferences (theme, language, visible games, score targets).</li>
     </ul>
-    <p>This data is never sent to a server or shared with third parties.</p>
+    <p>We send none of it to a server — we have none — and share it with no third party. Two exceptions, described below: Android's backup (section 4) copies it to your own Google storage if you have enabled it, and a recap image that you choose to share goes to the app you pick (section 5).</p>
+    <h2>2. No account</h2>
+    <p>No sign-up, no login, no access code. We ask for no email address, no phone number and no identifier. Nothing we hold can identify you.</p>
+    <h2>3. Advertising (free version)</h2>
+    <p>The free version displays a banner provided by Google AdMob. Google's advertising SDK then collects from your device, and transmits to Google:</p>
+    <ul>
+      <li>the device's <strong>advertising ID</strong> and the related app identifiers;</li>
+      <li>your <strong>approximate location</strong>, derived from your IP address — never GPS, which the app does not access;</li>
+      <li>your <strong>interactions with the app</strong>: ad impressions and taps, app launches;</li>
+      <li><strong>diagnostic logs</strong>: launch time, crashes, energy use.</li>
+    </ul>
+    <p>This data is used to select and measure ads, produce audience statistics and prevent fraud. It is <strong>shared with Google</strong>, acting as the ad network, and <strong>encrypted in transit</strong> (TLS). Google's practices are set out here: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
+    <p>In the European Economic Area, the United Kingdom and Switzerland, a consent form (Google User Messaging Platform) is shown before any ad is loaded. Without your consent, no personalised ads are served. You can change your choice at any time in Settings → "Manage ad consent".</p>
+    <p><strong>The Premium version removes the banner, and with it this collection</strong>: with no banner to display, the advertising SDK loads nothing.</p>
+    <h2>4. Android backup and changing phones</h2>
+    <p>So that changing phones does not wipe your history, the app allows Android's system backup. If you have enabled it on your device, Android copies the app's data — games, profiles, preferences — into <strong>your</strong> Google backup storage, then restores it on your new device. That backup is handled by Android and by your Google account, not by us: we have no access to it. You can turn it off in your device settings.</p>
+    <h2>5. Sharing that you initiate</h2>
+    <p>A game night recap can be shared as an image. It is produced on the device, then handed to the app you pick from the system share menu. ScoreParty sends it nowhere of its own accord and keeps no copy anywhere but on your device.</p>
+    <h2>6. Purchases</h2>
+    <p>The Premium purchase is handled by Google Play, or by the App Store on iPhone. We never see or store any payment data: the app only receives confirmation of the purchase and saves a local "premium enabled" flag.</p>
+    <h2>7. Network access</h2>
+    <p>Score-keeping works entirely offline. An internet connection is only needed to display ads, in the free version, and to process a purchase.</p>
+    <h2>8. Children</h2>
+    <p>ScoreParty is not directed at children under 13 and requests no data from them. The advertising it serves is configured in line with applicable regulations, notably the GDPR and COPPA.</p>
+    <h2>9. Data deletion and your rights</h2>
+    <p>All game data is local: uninstalling the app deletes it for good, and you can also erase a single game or an entire history from within the app. Since we hold no data about you, there is no access or deletion request to send us. For the data collected by advertising, control sits with Google: your Google account settings, and the consent form reachable from the app's Settings.</p>
+    <h2>10. Changes</h2>
+    <p>This policy may be updated. Any change is published both in the app and on this page, with its date.</p>
+    <h2>11. Contact</h2>
+    <p>For any question: <a href="mailto:jokoukos.studio@gmail.com">jokoukos.studio@gmail.com</a></p>
+  </section>
 
-    <h2>2. No User Account</h2>
-    <p>ScoreParty does not require any account, sign-up, or login. No email address, phone number, or identifier is requested.</p>
+  <section id="de" lang="de">
+    <h1>Datenschutzrichtlinie — ScoreParty</h1>
+    <p class="meta">Zuletzt aktualisiert: 7. September 2026</p>
+    <p>ScoreParty ist eine App zum Punktezählen für Karten- und Brettspiele. Sie funktioniert ohne Konto und ohne einen Server von uns. Diese Seite beschreibt genau, welche Daten Ihr Gerät verlassen und warum.</p>
+    <h2>1. Was Sie eingeben, bleibt auf dem Gerät</h2>
+    <p>Die Daten, die beim Spielen entstehen, werden im privaten Speicher der App auf Ihrem Gerät abgelegt:</p>
+    <ul>
+      <li>die Namen der Spieler und die Profile, die Sie anlegen;</li>
+      <li>Punkte, Partien und Spieleabende samt Verlauf und Statistiken;</li>
+      <li>Ihre Einstellungen (Design, Sprache, sichtbare Spiele, Punkteziele).</li>
+    </ul>
+    <p>Wir senden davon nichts an einen Server — wir haben keinen — und geben nichts an Dritte weiter. Zwei Ausnahmen, weiter unten beschrieben: die Sicherung von Android (Abschnitt 4) kopiert die Daten in Ihren eigenen Google-Speicher, sofern Sie sie aktiviert haben, und ein Zusammenfassungsbild, das Sie selbst teilen, geht an die App Ihrer Wahl (Abschnitt 5).</p>
+    <h2>2. Kein Konto</h2>
+    <p>Keine Registrierung, keine Anmeldung, kein Zugangscode. Wir fragen weder E-Mail-Adresse noch Telefonnummer noch eine Kennung ab. Nichts, was wir vorliegen haben, kann Sie identifizieren.</p>
+    <h2>3. Werbung (kostenlose Version)</h2>
+    <p>Die kostenlose Version zeigt ein Banner von Google AdMob. Das Werbe-SDK von Google erfasst dann auf Ihrem Gerät und übermittelt an Google:</p>
+    <ul>
+      <li>die <strong>Werbe-ID</strong> des Geräts und die zugehörigen App-Kennungen;</li>
+      <li>Ihren <strong>ungefähren Standort</strong>, abgeleitet aus Ihrer IP-Adresse — niemals GPS, auf das die App nicht zugreift;</li>
+      <li>Ihre <strong>Interaktionen mit der App</strong>: Anzeigen und Antippen von Werbung, App-Starts;</li>
+      <li><strong>Diagnoseprotokolle</strong>: Startzeit, Abstürze, Energieverbrauch.</li>
+    </ul>
+    <p>Diese Daten dienen der Auswahl und Messung von Werbung, der Reichweitenmessung und der Betrugsprävention. Sie werden <strong>an Google weitergegeben</strong>, das als Werbenetzwerk auftritt, und <strong>bei der Übertragung verschlüsselt</strong> (TLS). Die Praktiken von Google sind hier beschrieben: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
+    <p>Im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz wird Ihnen vor dem Laden jeder Werbung ein Einwilligungsformular (Google User Messaging Platform) angezeigt. Ohne Ihre Einwilligung wird keine personalisierte Werbung ausgeliefert. Sie können Ihre Wahl jederzeit unter Einstellungen → „Werbeeinwilligung verwalten“ ändern.</p>
+    <p><strong>Die Premium-Version entfernt das Banner und damit diese Erfassung</strong>: ohne Banner lädt das Werbe-SDK nichts.</p>
+    <h2>4. Android-Sicherung und Gerätewechsel</h2>
+    <p>Damit ein Gerätewechsel Ihren Verlauf nicht löscht, erlaubt die App die Systemsicherung von Android. Wenn Sie sie auf Ihrem Gerät aktiviert haben, kopiert Android die Daten der App — Partien, Profile, Einstellungen — in <strong>Ihren</strong> Google-Sicherungsspeicher und stellt sie auf dem neuen Gerät wieder her. Diese Sicherung übernehmen Android und Ihr Google-Konto, nicht wir: wir haben keinen Zugriff darauf. Sie können sie in den Einstellungen Ihres Geräts abschalten.</p>
+    <h2>5. Teilen auf Ihre Initiative</h2>
+    <p>Die Zusammenfassung eines Spieleabends lässt sich als Bild teilen. Es wird auf dem Gerät erzeugt und dann an die App übergeben, die Sie im Teilen-Menü des Systems auswählen. ScoreParty sendet es von sich aus nirgendwohin und behält außerhalb Ihres Geräts keine Kopie.</p>
+    <h2>6. Käufe</h2>
+    <p>Der Kauf der Premium-Version wird von Google Play, auf dem iPhone vom App Store, abgewickelt. Wir sehen und speichern keine Zahlungsdaten: die App erhält nur die Kaufbestätigung und speichert lokal einen Schalter „Premium aktiv“.</p>
+    <h2>7. Netzwerkverbindung</h2>
+    <p>Das Punktezählen funktioniert vollständig offline. Eine Internetverbindung wird nur zum Anzeigen von Werbung in der kostenlosen Version und zur Abwicklung eines Kaufs benötigt.</p>
+    <h2>8. Kinder</h2>
+    <p>ScoreParty richtet sich nicht an Kinder unter 13 Jahren und fragt bei ihnen keine Daten ab. Die ausgelieferte Werbung ist im Einklang mit den geltenden Vorschriften konfiguriert, insbesondere DSGVO und COPPA.</p>
+    <h2>9. Löschung der Daten und Ihre Rechte</h2>
+    <p>Alle Spieldaten liegen lokal: die App zu deinstallieren löscht sie endgültig, und Sie können auch eine einzelne Partie oder einen ganzen Verlauf in der App löschen. Da wir keine Daten über Sie vorliegen haben, gibt es keinen Auskunfts- oder Löschantrag, den Sie an uns richten müssten. Für die von der Werbung erfassten Daten liegt die Kontrolle bei Google: die Einstellungen Ihres Google-Kontos und das Einwilligungsformular, das über die Einstellungen der App erreichbar ist.</p>
+    <h2>10. Änderungen</h2>
+    <p>Diese Richtlinie kann aktualisiert werden. Jede Änderung wird mit Datum in der App und auf dieser Seite veröffentlicht.</p>
+    <h2>11. Kontakt</h2>
+    <p>Bei Fragen: <a href="mailto:jokoukos.studio@gmail.com">jokoukos.studio@gmail.com</a></p>
+  </section>
 
-    <h2>3. Advertising</h2>
-    <p>The free version of ScoreParty displays banner ads provided by Google AdMob. For this purpose, Google and its partners may collect and process certain data (including the device advertising identifier and usage data) to serve ads and measure their performance.</p>
-    <p>In the European Economic Area, the United Kingdom, and Switzerland, a consent form (Google User Messaging Platform) is presented before any ad is shown. Without your consent, only non-personalized ads may be served. You can change your choice at any time in Settings → "Manage ad consent".</p>
-    <p>Learn more about how Google uses data in advertising: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
-    <p>The Premium version (one-time purchase) removes all ads.</p>
+  <section id="es" lang="es">
+    <h1>Política de privacidad — ScoreParty</h1>
+    <p class="meta">Última actualización: 7 de septiembre de 2026</p>
+    <p>ScoreParty es una aplicación para llevar la puntuación de juegos de cartas y de mesa. Funciona sin cuenta y sin ningún servidor nuestro. Esta página describe con precisión los únicos datos que salen de tu dispositivo, y por qué.</p>
+    <h2>1. Lo que introduces se queda en el dispositivo</h2>
+    <p>Los datos que creas al jugar se guardan en el almacenamiento privado de la aplicación, en tu dispositivo:</p>
+    <ul>
+      <li>los nombres de los jugadores y los perfiles que creas;</li>
+      <li>las puntuaciones, las partidas y las veladas, con su historial y sus estadísticas;</li>
+      <li>tus preferencias (tema, idioma, juegos visibles, objetivos de puntuación).</li>
+    </ul>
+    <p>No enviamos nada de eso a ningún servidor — no tenemos ninguno — ni lo compartimos con terceros. Dos salvedades, descritas más abajo: la copia de seguridad de Android (sección 4) los copia en tu propio espacio de Google si la has activado, y una imagen de resumen que decides compartir va a la aplicación que tú elijas (sección 5).</p>
+    <h2>2. Ninguna cuenta</h2>
+    <p>Ningún registro, ningún inicio de sesión, ningún código de acceso. No pedimos dirección de correo, ni número de teléfono, ni identificador alguno. Nada de lo que tenemos permite identificarte.</p>
+    <h2>3. Publicidad (versión gratuita)</h2>
+    <p>La versión gratuita muestra un banner proporcionado por Google AdMob. El SDK de publicidad de Google recoge entonces de tu dispositivo, y transmite a Google:</p>
+    <ul>
+      <li>el <strong>identificador de publicidad</strong> del dispositivo y los identificadores de aplicación asociados;</li>
+      <li>tu <strong>ubicación aproximada</strong>, deducida de tu dirección IP — nunca el GPS, al que la aplicación no accede;</li>
+      <li>tus <strong>interacciones con la aplicación</strong>: impresiones y toques en los anuncios, inicios de la aplicación;</li>
+      <li><strong>registros de diagnóstico</strong>: tiempo de inicio, fallos, consumo de energía.</li>
+    </ul>
+    <p>Estos datos sirven para seleccionar y medir los anuncios, elaborar estadísticas de audiencia y prevenir el fraude. Se <strong>comparten con Google</strong>, que actúa como red publicitaria, y van <strong>cifrados durante la transferencia</strong> (TLS). Las prácticas de Google se detallan aquí: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
+    <p>En el Espacio Económico Europeo, el Reino Unido y Suiza se te presenta un formulario de consentimiento (Google User Messaging Platform) antes de cargar cualquier anuncio. Sin tu consentimiento no se muestra ningún anuncio personalizado. Puedes cambiar tu elección en cualquier momento en Ajustes → «Gestionar consentimiento de anuncios».</p>
+    <p><strong>La versión Premium elimina el banner y, con él, esta recogida</strong>: sin banner que mostrar, el SDK de publicidad no carga nada.</p>
+    <h2>4. Copia de seguridad de Android y cambio de teléfono</h2>
+    <p>Para que cambiar de teléfono no borre tu historial, la aplicación permite la copia de seguridad del sistema de Android. Si la has activado en tu dispositivo, Android copia los datos de la aplicación — partidas, perfiles, preferencias — en <strong>tu</strong> espacio de copia de seguridad de Google y los restaura en el dispositivo nuevo. De esa copia se encargan Android y tu cuenta de Google, no nosotros: no tenemos ningún acceso a ella. Puedes desactivarla en los ajustes de tu dispositivo.</p>
+    <h2>5. Compartir por tu iniciativa</h2>
+    <p>El resumen de una velada se puede compartir como imagen. Se genera en el dispositivo y se entrega a la aplicación que elijas en el menú de compartir del sistema. ScoreParty no la envía a ninguna parte por sí misma y no conserva ninguna copia fuera de tu dispositivo.</p>
+    <h2>6. Compras</h2>
+    <p>La compra de la versión Premium la gestiona Google Play, o la App Store en iPhone. No vemos ni conservamos ningún dato de pago: la aplicación solo recibe la confirmación de la compra y guarda localmente un indicador de «premium activado».</p>
+    <h2>7. Conexión de red</h2>
+    <p>Llevar la puntuación funciona completamente sin conexión. Solo se necesita conexión a internet para mostrar los anuncios, en la versión gratuita, y para procesar una compra.</p>
+    <h2>8. Menores</h2>
+    <p>ScoreParty no está dirigida a menores de 13 años y no les pide ningún dato. La publicidad que se muestra está configurada conforme a la normativa aplicable, en particular el RGPD y la COPPA.</p>
+    <h2>9. Eliminación de los datos y tus derechos</h2>
+    <p>Todos los datos de juego son locales: desinstalar la aplicación los elimina definitivamente, y también puedes borrar una partida o un historial completo desde la propia aplicación. Como no tenemos ningún dato sobre ti, no hay ninguna solicitud de acceso o de supresión que dirigirnos. Para los datos recogidos por la publicidad, el control es de Google: los ajustes de tu cuenta de Google y el formulario de consentimiento accesible desde los Ajustes de la aplicación.</p>
+    <h2>10. Modificaciones</h2>
+    <p>Esta política puede actualizarse. Cualquier cambio se publica tanto en la aplicación como en esta página, con su fecha.</p>
+    <h2>11. Contacto</h2>
+    <p>Para cualquier duda: <a href="mailto:jokoukos.studio@gmail.com">jokoukos.studio@gmail.com</a></p>
+  </section>
 
-    <h2>4. Network Access</h2>
-    <p>Score-keeping works entirely offline. Only ad display (free version) requires an Internet connection.</p>
+  <section id="it" lang="it">
+    <h1>Informativa sulla privacy — ScoreParty</h1>
+    <p class="meta">Ultimo aggiornamento: 7 settembre 2026</p>
+    <p>ScoreParty è un'app per tenere il punteggio di giochi di carte e da tavolo. Funziona senza account e senza alcun server nostro. Questa pagina descrive con precisione i soli dati che lasciano il tuo dispositivo, e perché.</p>
+    <h2>1. Quello che inserisci resta sul dispositivo</h2>
+    <p>I dati che crei giocando vengono salvati nella memoria privata dell'app, sul tuo dispositivo:</p>
+    <ul>
+      <li>i nomi dei giocatori e i profili che crei;</li>
+      <li>i punteggi, le partite e le serate, con la loro cronologia e le statistiche;</li>
+      <li>le tue preferenze (tema, lingua, giochi visibili, obiettivi di punteggio).</li>
+    </ul>
+    <p>Non ne inviamo nulla a un server — non ne abbiamo alcuno — e non li condividiamo con terzi. Due eccezioni, descritte più sotto: il backup di Android (sezione 4) li copia nel tuo spazio Google se lo hai attivato, e un'immagine di riepilogo che scegli di condividere va all'app che indichi tu (sezione 5).</p>
+    <h2>2. Nessun account</h2>
+    <p>Nessuna registrazione, nessun accesso, nessun codice. Non chiediamo né indirizzo e-mail, né numero di telefono, né alcun identificativo. Nulla di ciò che abbiamo permette di identificarti.</p>
+    <h2>3. Pubblicità (versione gratuita)</h2>
+    <p>La versione gratuita mostra un banner fornito da Google AdMob. L'SDK pubblicitario di Google raccoglie allora dal tuo dispositivo, e trasmette a Google:</p>
+    <ul>
+      <li>l'<strong>identificativo pubblicitario</strong> del dispositivo e gli identificativi di app associati;</li>
+      <li>la tua <strong>posizione approssimativa</strong>, dedotta dal tuo indirizzo IP — mai il GPS, a cui l'app non accede;</li>
+      <li>le tue <strong>interazioni con l'app</strong>: visualizzazioni e tocchi sugli annunci, avvii dell'app;</li>
+      <li><strong>registri di diagnostica</strong>: tempo di avvio, arresti anomali, consumo di energia.</li>
+    </ul>
+    <p>Questi dati servono a selezionare e misurare gli annunci, a produrre statistiche di audience e a prevenire le frodi. Vengono <strong>condivisi con Google</strong>, che agisce come concessionaria pubblicitaria, e sono <strong>cifrati durante il trasferimento</strong> (TLS). Le pratiche di Google sono descritte qui: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
+    <p>Nello Spazio economico europeo, nel Regno Unito e in Svizzera ti viene presentato un modulo di consenso (Google User Messaging Platform) prima del caricamento di qualsiasi annuncio. Senza il tuo consenso non viene mostrato alcun annuncio personalizzato. Puoi modificare la tua scelta in qualsiasi momento in Impostazioni → «Gestisci consenso pubblicità».</p>
+    <p><strong>La versione Premium rimuove il banner e, con esso, questa raccolta</strong>: senza banner da mostrare, l'SDK pubblicitario non carica nulla.</p>
+    <h2>4. Backup di Android e cambio di telefono</h2>
+    <p>Perché cambiare telefono non cancelli la tua cronologia, l'app consente il backup di sistema di Android. Se lo hai attivato sul dispositivo, Android copia i dati dell'app — partite, profili, preferenze — nel <strong>tuo</strong> spazio di backup Google e li ripristina sul nuovo dispositivo. Di quel backup si occupano Android e il tuo account Google, non noi: non vi abbiamo alcun accesso. Puoi disattivarlo nelle impostazioni del dispositivo.</p>
+    <h2>5. Condivisione su tua iniziativa</h2>
+    <p>Il riepilogo di una serata può essere condiviso come immagine. Viene prodotta sul dispositivo e poi consegnata all'app che scegli nel menu di condivisione del sistema. ScoreParty non la invia da sé in alcun luogo e non ne conserva copia al di fuori del tuo dispositivo.</p>
+    <h2>6. Acquisti</h2>
+    <p>L'acquisto della versione Premium è gestito da Google Play, o dall'App Store su iPhone. Non vediamo né conserviamo alcun dato di pagamento: l'app riceve soltanto la conferma dell'acquisto e salva localmente un indicatore «premium attivo».</p>
+    <h2>7. Connessione di rete</h2>
+    <p>Il conteggio dei punti funziona interamente offline. Una connessione a internet serve solo a mostrare gli annunci, nella versione gratuita, e a elaborare un acquisto.</p>
+    <h2>8. Minori</h2>
+    <p>ScoreParty non è destinata ai minori di 13 anni e non chiede loro alcun dato. La pubblicità mostrata è configurata in conformità alle normative applicabili, in particolare il GDPR e il COPPA.</p>
+    <h2>9. Cancellazione dei dati e i tuoi diritti</h2>
+    <p>Tutti i dati di gioco sono locali: disinstallare l'app li cancella definitivamente, e puoi anche eliminare una singola partita o un'intera cronologia dall'app stessa. Poiché non deteniamo alcun dato che ti riguardi, non c'è alcuna richiesta di accesso o di cancellazione da rivolgerci. Per i dati raccolti dalla pubblicità il controllo è di Google: le impostazioni del tuo account Google e il modulo di consenso raggiungibile dalle Impostazioni dell'app.</p>
+    <h2>10. Modifiche</h2>
+    <p>Questa informativa può essere aggiornata. Ogni modifica viene pubblicata sia nell'app sia in questa pagina, con la sua data.</p>
+    <h2>11. Contatti</h2>
+    <p>Per qualsiasi domanda: <a href="mailto:jokoukos.studio@gmail.com">jokoukos.studio@gmail.com</a></p>
+  </section>
 
-    <h2>5. Children's Data</h2>
-    <p>ScoreParty is not directed at children under 13 and does not request any data from them. The ads served are configured to comply with applicable regulations (COPPA, GDPR).</p>
+  <section id="pt" lang="pt">
+    <h1>Política de privacidade — ScoreParty</h1>
+    <p class="meta">Última atualização: 7 de setembro de 2026</p>
+    <p>O ScoreParty é um aplicativo de contagem de pontos para jogos de cartas e de tabuleiro. Funciona sem conta e sem nenhum servidor nosso. Esta página descreve com precisão os únicos dados que saem do seu aparelho, e por quê.</p>
+    <h2>1. O que você digita fica no aparelho</h2>
+    <p>Os dados que você cria ao jogar são gravados no armazenamento privado do aplicativo, no seu aparelho:</p>
+    <ul>
+      <li>os nomes dos jogadores e os perfis que você cria;</li>
+      <li>as pontuações, as partidas e as noites de jogo, com o histórico e as estatísticas;</li>
+      <li>suas preferências (tema, idioma, jogos visíveis, objetivos de pontuação).</li>
+    </ul>
+    <p>Não enviamos nada disso a nenhum servidor — não temos nenhum — nem compartilhamos com terceiros. Duas ressalvas, descritas abaixo: a cópia de segurança do Android (seção 4) copia esses dados para o seu próprio espaço do Google, se você a tiver ativado, e uma imagem de resumo que você escolhe compartilhar vai para o aplicativo que você indicar (seção 5).</p>
+    <h2>2. Nenhuma conta</h2>
+    <p>Nenhum cadastro, nenhum login, nenhum código de acesso. Não pedimos endereço de e-mail, número de telefone nem qualquer identificador. Nada do que temos permite identificá-lo.</p>
+    <h2>3. Publicidade (versão gratuita)</h2>
+    <p>A versão gratuita exibe um banner fornecido pelo Google AdMob. O SDK de publicidade do Google coleta então, do seu aparelho, e transmite ao Google:</p>
+    <ul>
+      <li>o <strong>identificador de publicidade</strong> do aparelho e os identificadores de aplicativo associados;</li>
+      <li>sua <strong>localização aproximada</strong>, deduzida do seu endereço IP — nunca o GPS, ao qual o aplicativo não acessa;</li>
+      <li>suas <strong>interações com o aplicativo</strong>: exibições e toques nos anúncios, aberturas do aplicativo;</li>
+      <li><strong>registros de diagnóstico</strong>: tempo de inicialização, travamentos, consumo de energia.</li>
+    </ul>
+    <p>Esses dados servem para selecionar e medir os anúncios, produzir estatísticas de audiência e prevenir fraudes. São <strong>compartilhados com o Google</strong>, que atua como rede de publicidade, e vão <strong>criptografados durante a transferência</strong> (TLS). As práticas do Google estão detalhadas aqui: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
+    <p>No Espaço Econômico Europeu, no Reino Unido e na Suíça, um formulário de consentimento (Google User Messaging Platform) é apresentado antes do carregamento de qualquer anúncio. Sem o seu consentimento, nenhum anúncio personalizado é exibido. Você pode mudar sua escolha a qualquer momento em Configurações → «Gerir consentimento de anúncios».</p>
+    <p><strong>A versão Premium remove o banner e, com ele, essa coleta</strong>: sem banner a exibir, o SDK de publicidade não carrega nada.</p>
+    <h2>4. Cópia de segurança do Android e troca de aparelho</h2>
+    <p>Para que trocar de aparelho não apague o seu histórico, o aplicativo permite a cópia de segurança do sistema Android. Se você a tiver ativado no aparelho, o Android copia os dados do aplicativo — partidas, perfis, preferências — para o <strong>seu</strong> espaço de backup do Google e os restaura no aparelho novo. Essa cópia é feita pelo Android e pela sua conta Google, não por nós: não temos nenhum acesso a ela. Você pode desativá-la nas configurações do aparelho.</p>
+    <h2>5. Compartilhamento por sua iniciativa</h2>
+    <p>O resumo de uma noite de jogo pode ser compartilhado como imagem. Ela é produzida no aparelho e entregue ao aplicativo que você escolher no menu de compartilhamento do sistema. O ScoreParty não a envia a lugar algum por conta própria e não guarda nenhuma cópia fora do seu aparelho.</p>
+    <h2>6. Compras</h2>
+    <p>A compra da versão Premium é processada pelo Google Play, ou pela App Store no iPhone. Não vemos nem guardamos nenhum dado de pagamento: o aplicativo apenas recebe a confirmação da compra e grava localmente um indicador de «premium ativado».</p>
+    <h2>7. Conexão de rede</h2>
+    <p>A contagem de pontos funciona inteiramente offline. Uma conexão à internet só é necessária para exibir os anúncios, na versão gratuita, e para processar uma compra.</p>
+    <h2>8. Crianças</h2>
+    <p>O ScoreParty não se destina a crianças menores de 13 anos e não lhes pede nenhum dado. A publicidade exibida é configurada de acordo com as regulamentações aplicáveis, em especial o RGPD e a COPPA.</p>
+    <h2>9. Exclusão dos dados e seus direitos</h2>
+    <p>Todos os dados de jogo são locais: desinstalar o aplicativo os apaga definitivamente, e você também pode excluir uma partida ou todo um histórico de dentro do aplicativo. Como não detemos nenhum dado a seu respeito, não há pedido de acesso ou de exclusão a nos dirigir. Para os dados coletados pela publicidade, o controle é do Google: as configurações da sua conta Google e o formulário de consentimento acessível nas Configurações do aplicativo.</p>
+    <h2>10. Alterações</h2>
+    <p>Esta política pode ser atualizada. Qualquer alteração é publicada tanto no aplicativo como nesta página, com a sua data.</p>
+    <h2>11. Contato</h2>
+    <p>Para qualquer dúvida: <a href="mailto:jokoukos.studio@gmail.com">jokoukos.studio@gmail.com</a></p>
+  </section>
 
-    <h2>6. Data Deletion</h2>
-    <p>All game data is stored locally. Uninstalling the app permanently deletes all data. You can also delete games from the app's history.</p>
+  <section id="tr" lang="tr">
+    <h1>Gizlilik Politikası — ScoreParty</h1>
+    <p class="meta">Son güncelleme: 7 Eylül 2026</p>
+    <p>ScoreParty, kart ve masa oyunları için bir puan tutma uygulamasıdır. Hesap gerektirmeden ve bize ait hiçbir sunucu olmadan çalışır. Bu sayfa, cihazınızdan çıkan verilerin tam olarak hangileri olduğunu ve nedenini açıklar.</p>
+    <h2>1. Girdiğiniz veriler cihazda kalır</h2>
+    <p>Oynarken oluşturduğunuz veriler, cihazınızdaki uygulamanın özel depolama alanına kaydedilir:</p>
+    <ul>
+      <li>oluşturduğunuz oyuncu adları ve profiller;</li>
+      <li>puanlar, partiler ve oyun geceleri, geçmişleri ve istatistikleriyle birlikte;</li>
+      <li>tercihleriniz (tema, dil, görünür oyunlar, puan hedefleri).</li>
+    </ul>
+    <p>Bunların hiçbirini bir sunucuya göndermiyoruz — sunucumuz yok — ve hiçbir üçüncü tarafla paylaşmıyoruz. Aşağıda açıklanan iki istisna var: Android yedeklemesi (4. bölüm), etkinleştirdiyseniz verileri kendi Google alanınıza kopyalar ve paylaşmayı seçtiğiniz bir özet görseli, seçtiğiniz uygulamaya gider (5. bölüm).</p>
+    <h2>2. Hesap yok</h2>
+    <p>Kayıt yok, oturum açma yok, erişim kodu yok. E-posta adresi, telefon numarası veya herhangi bir kimlik bilgisi istemiyoruz. Elimizdeki hiçbir veri sizi tanımlamaya yaramaz.</p>
+    <h2>3. Reklamlar (ücretsiz sürüm)</h2>
+    <p>Ücretsiz sürüm, Google AdMob tarafından sağlanan bir banner gösterir. Google'ın reklam SDK'sı bu durumda cihazınızdan şunları toplar ve Google'a iletir:</p>
+    <ul>
+      <li>cihazın <strong>reklam kimliği</strong> ve ilişkili uygulama kimlikleri;</li>
+      <li>IP adresinizden çıkarılan <strong>yaklaşık konumunuz</strong> — uygulamanın erişmediği GPS asla kullanılmaz;</li>
+      <li><strong>uygulama içi etkileşimleriniz</strong>: reklam gösterimleri ve dokunmaları, uygulama açılışları;</li>
+      <li><strong>tanılama kayıtları</strong>: başlatma süresi, çökmeler, enerji tüketimi.</li>
+    </ul>
+    <p>Bu veriler reklamların seçilmesi ve ölçülmesi, kitle istatistiklerinin üretilmesi ve dolandırıcılığın önlenmesi için kullanılır. Reklam ağı olarak hareket eden <strong>Google ile paylaşılır</strong> ve <strong>aktarım sırasında şifrelenir</strong> (TLS). Google'ın uygulamaları burada açıklanıyor: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
+    <p>Avrupa Ekonomik Alanı'nda, Birleşik Krallık'ta ve İsviçre'de, herhangi bir reklam yüklenmeden önce size bir izin formu (Google User Messaging Platform) gösterilir. İzniniz olmadan hiçbir kişiselleştirilmiş reklam yayınlanmaz. Seçiminizi her zaman Ayarlar → «Reklam iznini yönet» bölümünden değiştirebilirsiniz.</p>
+    <p><strong>Premium sürüm banner'ı ve onunla birlikte bu veri toplamayı kaldırır</strong>: gösterilecek banner olmadığında reklam SDK'sı hiçbir şey yüklemez.</p>
+    <h2>4. Android yedeklemesi ve telefon değişikliği</h2>
+    <p>Telefon değiştirmenin geçmişinizi silmemesi için uygulama, Android'in sistem yedeklemesine izin verir. Cihazınızda etkinleştirdiyseniz Android, uygulamanın verilerini — partiler, profiller, tercihler — <strong>sizin</strong> Google yedekleme alanınıza kopyalar ve yeni cihazınızda geri yükler. Bu yedekleme, biz değil, Android ve Google hesabınız tarafından yürütülür: buna hiçbir erişimimiz yok. Cihazınızın ayarlarından kapatabilirsiniz.</p>
+    <h2>5. Sizin başlattığınız paylaşım</h2>
+    <p>Bir oyun gecesinin özeti görsel olarak paylaşılabilir. Görsel cihazda üretilir, ardından sistemin paylaşım menüsünde seçtiğiniz uygulamaya verilir. ScoreParty onu kendiliğinden hiçbir yere göndermez ve cihazınızın dışında hiçbir kopyasını tutmaz.</p>
+    <h2>6. Satın almalar</h2>
+    <p>Premium sürümün satın alınması Google Play, iPhone'da ise App Store tarafından işlenir. Hiçbir ödeme verisini görmüyor ve saklamıyoruz: uygulama yalnızca satın alma onayını alır ve yerel olarak bir «premium etkin» göstergesi kaydeder.</p>
+    <h2>7. Ağ bağlantısı</h2>
+    <p>Puan tutma tamamen çevrimdışı çalışır. İnternet bağlantısı yalnızca ücretsiz sürümde reklamların gösterilmesi ve bir satın almanın işlenmesi için gereklidir.</p>
+    <h2>8. Çocuklar</h2>
+    <p>ScoreParty 13 yaşın altındaki çocuklara yönelik değildir ve onlardan hiçbir veri istemez. Yayınlanan reklamlar, başta GDPR ve COPPA olmak üzere geçerli düzenlemelere uygun olarak yapılandırılmıştır.</p>
+    <h2>9. Verilerin silinmesi ve haklarınız</h2>
+    <p>Tüm oyun verileri yereldir: uygulamayı kaldırmak onları kalıcı olarak siler, ayrıca uygulama içinden tek bir partiyi veya tüm bir geçmişi de silebilirsiniz. Size ait hiçbir veriyi elimizde tutmadığımız için bize yöneltilecek bir erişim veya silme talebi yoktur. Reklamların topladığı veriler için kontrol Google'dadır: Google hesabınızın ayarları ve uygulamanın Ayarlar bölümünden erişilebilen izin formu.</p>
+    <h2>10. Değişiklikler</h2>
+    <p>Bu politika güncellenebilir. Her değişiklik, tarihiyle birlikte hem uygulamada hem de bu sayfada yayımlanır.</p>
+    <h2>11. İletişim</h2>
+    <p>Her türlü soru için: <a href="mailto:jokoukos.studio@gmail.com">jokoukos.studio@gmail.com</a></p>
+  </section>
 
-    <h2>7. Changes</h2>
-    <p>This policy may be updated. Any changes will be reflected in the app and on this page.</p>
-
-    <h2>8. Contact</h2>
-    <p>For any questions, contact us at: <a href="mailto:jokoukos.studio@gmail.com">jokoukos.studio@gmail.com</a></p>
+  <section id="ar" lang="ar" dir="rtl">
+    <h1>سياسة الخصوصية — ScoreParty</h1>
+    <p class="meta">آخر تحديث: 7 سبتمبر 2026</p>
+    <p>‏ScoreParty تطبيق لحساب النقاط في ألعاب الورق وألعاب الطاولة. يعمل بدون حساب وبدون أي خادم يملكه المطوّر. توضّح هذه الصفحة بدقة البيانات الوحيدة التي تخرج من جهازك، وسببَ خروجها.</p>
+    <h2>1. ما تُدخله يبقى على الجهاز</h2>
+    <p>البيانات التي تنشئها أثناء اللعب تُحفظ في مساحة التخزين الخاصة بالتطبيق، على جهازك:</p>
+    <ul>
+      <li>أسماء اللاعبين والملفات الشخصية التي تنشئها؛</li>
+      <li>النقاط والمباريات وأمسيات اللعب، مع سجلّها وإحصاءاتها؛</li>
+      <li>تفضيلاتك (المظهر، اللغة، الألعاب الظاهرة، أهداف النقاط).</li>
+    </ul>
+    <p>لا نرسل أيًّا منها إلى أي خادم — فلا خادم لدينا — ولا نشاركها مع أي طرف ثالث. هناك استثناءان، موضّحان أدناه: نسخة Android الاحتياطية (القسم 4) تنسخها إلى مساحة Google الخاصة بك إن كنت قد شغّلتها، وصورة الملخّص التي تختار مشاركتها تذهب إلى التطبيق الذي تحدّده (القسم 5).</p>
+    <h2>2. لا حساب</h2>
+    <p>لا تسجيل، ولا دخول، ولا رمز وصول. لا نطلب بريدًا إلكترونيًا ولا رقم هاتف ولا أي معرّف. ولا شيء بحوزتنا يمكن أن يعرّف بك.</p>
+    <h2>3. الإعلانات (النسخة المجانية)</h2>
+    <p>تعرض النسخة المجانية لافتة إعلانية من Google AdMob. وعندها تجمع حزمة إعلانات Google من جهازك، وترسل إلى Google:</p>
+    <ul>
+      <li><strong>معرّف الإعلانات</strong> الخاص بالجهاز ومعرّفات التطبيق المرتبطة به؛</li>
+      <li><strong>موقعك التقريبي</strong> المستنتج من عنوان IP — وليس نظام تحديد المواقع GPS، فالتطبيق لا يصل إليه أبدًا؛</li>
+      <li><strong>تفاعلاتك مع التطبيق</strong>: ظهور الإعلانات والنقر عليها، ومرات فتح التطبيق؛</li>
+      <li><strong>سجلات التشخيص</strong>: زمن بدء التشغيل، والأعطال، واستهلاك الطاقة.</li>
+    </ul>
+    <p>تُستخدم هذه البيانات لاختيار الإعلانات وقياسها، وإنتاج إحصاءات الجمهور، ومنع الغش. وهي <strong>تُشارَك مع Google</strong> بصفتها شبكة الإعلانات، و<strong>تُشفَّر أثناء النقل</strong> (TLS). تفاصيل ممارسات Google هنا: <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
+    <p>في المنطقة الاقتصادية الأوروبية والمملكة المتحدة وسويسرا، يُعرض عليك نموذج موافقة (Google User Messaging Platform) قبل تحميل أي إعلان. وبدون موافقتك لا تُعرض أي إعلانات مخصّصة. ويمكنك تغيير اختيارك في أي وقت من الإعدادات، عبر «إدارة الموافقة على الإعلانات».</p>
+    <p><strong>النسخة المدفوعة (Premium) تُزيل اللافتة، ومعها هذا الجمع</strong>: فبدون لافتة تُعرض، لا تحمّل حزمة الإعلانات أي شيء.</p>
+    <h2>4. نسخة Android الاحتياطية وتغيير الهاتف</h2>
+    <p>لكي لا يمحو تغييرُ الهاتف سجلّك، يسمح التطبيق بالنسخ الاحتياطي في نظام Android. فإن كنت قد شغّلته على جهازك، ينسخ Android بيانات التطبيق — المباريات والملفات الشخصية والتفضيلات — إلى مساحة النسخ الاحتياطي <strong>الخاصة بك</strong> في Google، ثم يستعيدها على جهازك الجديد. هذه النسخة يديرها Android وحسابك في Google، لا نحن: ولا نملك أي وصول إليها. ويمكنك إيقافها من إعدادات جهازك.</p>
+    <h2>5. المشاركة بمبادرة منك</h2>
+    <p>يمكن مشاركة ملخّص أمسية اللعب على هيئة صورة. تُنتَج الصورة على الجهاز، ثم تُسلَّم إلى التطبيق الذي تختاره من قائمة المشاركة في النظام. ولا يرسلها ScoreParty إلى أي مكان من تلقاء نفسه، ولا يحتفظ بأي نسخة منها خارج جهازك.</p>
+    <h2>6. عمليات الشراء</h2>
+    <p>يتولّى Google Play شراء النسخة المدفوعة، أو App Store على iPhone. ولا نرى أي بيانات دفع ولا نحتفظ بها: يستقبل التطبيق تأكيد الشراء فقط، ويحفظ محليًا مؤشرًا يدلّ على تفعيل النسخة المدفوعة.</p>
+    <h2>7. الاتصال بالشبكة</h2>
+    <p>حساب النقاط يعمل دون اتصال بالكامل. ولا يُحتاج إلى اتصال بالإنترنت إلا لعرض الإعلانات في النسخة المجانية، ولإتمام عملية شراء.</p>
+    <h2>8. الأطفال</h2>
+    <p>‏ScoreParty غير موجّه للأطفال دون سنّ 13 عامًا، ولا يطلب منهم أي بيانات. والإعلانات المعروضة مضبوطة وفقًا للأنظمة المعمول بها، وبخاصة اللائحة الأوروبية العامة لحماية البيانات (GDPR) وقانون COPPA.</p>
+    <h2>9. حذف البيانات وحقوقك</h2>
+    <p>جميع بيانات اللعب محلية: فإلغاء تثبيت التطبيق يحذفها نهائيًا، ويمكنك أيضًا حذف مباراة واحدة أو سجلّ كامل من داخل التطبيق. ولأننا لا نحتفظ بأي بيانات عنك، فلا يوجد طلب وصول أو حذف تحتاج إلى إرساله إلينا. أما البيانات التي تجمعها الإعلانات فالتحكّم فيها لدى Google: من إعدادات حسابك في Google، ومن نموذج الموافقة المتاح في إعدادات التطبيق.</p>
+    <h2>10. التعديلات</h2>
+    <p>قد تُحدَّث هذه السياسة. وكل تعديل يُنشر في التطبيق وفي هذه الصفحة معًا، مع تاريخه.</p>
+    <h2>11. التواصل</h2>
+    <p>لأي سؤال: <a href="mailto:jokoukos.studio@gmail.com">jokoukos.studio@gmail.com</a></p>
   </section>
 </body>
 </html>
